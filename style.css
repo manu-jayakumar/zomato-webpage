@@ -31,6 +31,7 @@ body {
 
 
     );
+    
     color: #fff;
     border: none;
     padding: 10px;
@@ -42,18 +43,47 @@ body {
     border: 2px solid #ff6767;
     cursor: pointer
 }
+
 .container {
     padding: 20px;
     max-width: 100%;
     margin: 0 auto;
 }
+
+
 .hero_image_container {
+    position: relative;
     width: 100%;
+   
+  
 }
+
+.bg_pattern {
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+    
+}
+
+.hero_bg{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left:0;
+    
+}
+
 .hero_image {
+    position:absolute;
     width: 100%;
+    left: 0;
+   
     border-radius: 8px;
+
+   
 }
+
 
 .hero_text {
     font-weight: 800;
@@ -67,32 +97,118 @@ padding: 15px;
 
 .food_card {
     background-color: #f9f9f9;
-
+    margin-top: -20px;
+    
 }
 .food_card_image_container {
     width: 100%;
 }
 
 .food_card_image {
+  
     width:100%;
     border-radius: 8px 8px 0px 0px;
+   
+}
+
+#tea_card {
+   margin-top: 20px;
 }
 
 .explore_menu_text {
     font-weight: 800;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     text-align: center;
-    font-size: 30px;
-    margin: 20px 0;
+    font-size: 24px;
     color: #1d3557
 }
 
-#tea_card {
-    margin-top: -20px;
-    margin-bottom: 30px;
+.button {
+    width:100%;
+}
+.button_viewmore {
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+      #ff512f 100%
+
+
+    );
+    width:100%;
+    color: #fff;
+    border: none;
+    padding: 16px 50px 16px 50px;
+    margin-top: 20px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+.button_viewmore:hover {
+ 
+    border: 2px solid #ff6767;
+    cursor: pointer
 }
 
+
+.restaurant_list_text {
+    font-weight: 900px;
+    font-size: 25px;
+    margin: 30px 0;
+    color: #1d3557;
+}
+
+
+.restaurant_image {
+
+    width: 100%;
+
+}
+
+.restaurant_image_row1 {
+    width:163px;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.restaurant_image_row2 {
+    width: 163px;
+    display:flex;
+    gap: 15px
+}
+
+.restaurant_image2 {
+    width:100%;
+    border-radius: 8px;
+
+}
+
+.restaurant_image1 {
+    width:100%;
+    border-radius: 8px;
+
+}
+
+.restaurant_image3 {
+    margin-top: 20px;
+    width: 110%;
+    border-radius:8px;
+    
+}
+
+#image2 {
+
+    margin-top: -10px;
+}
+
+#image4 {
+
+    margin-top:20px;
+    margin-bottom: 20px;
+    width: 89%;
+    margin-left: -5px;
+}
 
 @media (min-width: 768px) {
     .navbar {
@@ -107,12 +223,18 @@ padding: 15px;
         align-items: center;
     }
 
+    .button{
+        margin-top: -20px;
+    }
+
     .explore_menu_list {
         margin-top: 45px;
         display: flex;
         gap: 15px;
         padding: 0 30px;
     }
+
+   
 
 .explore_menu_container{
     position: relative;
@@ -136,6 +258,11 @@ padding: 15px;
         transform: skewY(-5deg);
     }
 
+    #tea_card {
+        margin-top: -35px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
 }
 @media (min-width: 1024px){
     .container
@@ -164,5 +291,9 @@ padding: 15px;
     .explore_menu_text{
         font-size: 48px;
     }
-
+ 
+    #tea_card {
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
 }
